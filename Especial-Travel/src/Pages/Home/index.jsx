@@ -1,9 +1,10 @@
-
+import Layout from "../../Components/Layout"
 const Home = () => {
   return (
-    <div className="bg-orange-700">
+    <Layout>
       Home
-    </div>
+    </Layout>
+    
   )
 }
 
