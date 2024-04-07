@@ -14,6 +14,14 @@ export const ShoppingCartProvider = ({children}) => {
     //ProductDetail . Show product
     const [productToShow, setProductToShow] = useState({})
 
+    //Shopping cart - add products to cart
+    const [cartProducts, setCartProducts] = useState([])
+
+    //Product Detail . Open/Close
+    const [isCheckoutSideMenuOpen, setIsCheckoutSideMenuOpen] = useState(false)
+    const openCheckoutSideMenu = () => setIsCheckoutSideMenuOpen(true)
+    const closeCheckoutSideMenu = () => setIsCheckoutSideMenuOpen(false)
+
     return (
         <ShoppingCartContext.Provider value={{
             count,
@@ -22,7 +30,14 @@ export const ShoppingCartProvider = ({children}) => {
             closeProductDetail,
             isProductDetailOpen,
             productToShow,
-            setProductToShow
+            setProductToShow,
+            cartProducts,
+            setCartProducts,
+            isCheckoutSideMenuOpen,
+            openCheckoutSideMenu,
+            closeCheckoutSideMenu,
+
+
         }}>
             {children}
         </ShoppingCartContext.Provider>
