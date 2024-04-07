@@ -7,6 +7,10 @@ const OrderCard = () => {
             <figure>
                 <img src='' alt=''></img>
             </figure>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
         </div>
     </div>
   )
