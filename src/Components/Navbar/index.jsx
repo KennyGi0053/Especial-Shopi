@@ -82,9 +82,9 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className="flex items-center gap-3 ">
-        <li className=" text-black/60 text-xs">
+        {/* <li className=" text-black/60 text-xs">
           kennygabriel00@gmail.com
-        </li>
+        </li> */}
         <li className="hidden md:block">
           <NavLink 
             to='/myorders'
