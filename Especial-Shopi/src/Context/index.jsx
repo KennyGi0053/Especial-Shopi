@@ -75,7 +75,14 @@ export const ShoppingCartProvider = ({children}) => {
             if (!searchByTitle && !searchByCategory) setFilteredItems(filterBy(null, items, searchByTitle, searchByCategory))
         }, [items, searchByTitle, searchByCategory]) 
 
-        
+        const addOrder = (neworder) => {
+            const date = new Date().toLocaleDateString(); // Formato de fecha local
+            const orderWithDate = {
+                ...order,
+                date,
+            };
+            setOrder([...order, orderWithDate]);
+        };
 
 
     return (
@@ -100,7 +107,8 @@ export const ShoppingCartProvider = ({children}) => {
             setSearchByTitle,
             filteredItems,
             searchByCategory,
-            setSearchByCategory
+            setSearchByCategory,
+            addOrder
 
 
         }}>

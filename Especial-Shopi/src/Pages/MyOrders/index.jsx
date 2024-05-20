@@ -7,10 +7,10 @@ import { ShoppingCartContext } from "../../Context"
 
 const MyOrders = () => {
   const context = useContext(ShoppingCartContext)
+  
   return (
     <Layout>
       <div className="flex items-center justify-center relative w-80 mb-4">
-      
         <h1 className="font-medium text-xl">My Orders</h1>
       </div>
       {
@@ -18,7 +18,10 @@ const MyOrders = () => {
           <Link key={index} to= {`/myorders/${index}`}>
           <OrdersCard 
           totalPrice={order.totalPrice} 
-          totalProducts={order.totalProducts}/>
+          totalProducts={order.totalProducts}
+          date={order.date}
+          />
+
           </Link>
         ))
       }
