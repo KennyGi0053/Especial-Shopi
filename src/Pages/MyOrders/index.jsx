@@ -20,6 +20,7 @@ const MyOrders = () => {
           totalPrice={order.totalPrice} 
           totalProducts={order.totalProducts}
           date={order.date}
+          
           />
 
           </Link>

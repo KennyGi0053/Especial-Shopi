@@ -14,10 +14,10 @@ const AppRoutes = () => {
 
   const routes = useRoutes([
     { path: '/', element: <Home/>},
-    { path: '/clothes', element: <Home/>},
+    { path: '/jewelery', element: <Home/>},
     { path: '/electronics', element: <Home/>},
-    { path: '/furnitures', element: <Home/>},
-    { path: '/toys', element: <Home/>},
+    { path: '/womensclothing', element: <Home/>},
+    { path: '/mensclothing', element: <Home/>},
     { path: '/others', element: <Home/>},
     { path: '/myaccount', element: <MyAccount/>},
     { path: '/myorders', element: <MyOrders/>},
